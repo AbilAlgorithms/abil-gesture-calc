@@ -1,154 +1,116 @@
-🌌 3D Interactive Particle System — Antigravity Experiment
+# 🌌 3D Gesture Particle Engine  
+> Hand-controlled cosmic particle simulation in the browser — zero installs, pure magic.
 
-“What if pixels behaved like particles… and particles behaved like energy?”
+![demo](https://img.shields.io/badge/Status-Live-success)
+![threejs](https://img.shields.io/badge/Three.js-Shader%20Particles-blue)
+![mediapipe](https://img.shields.io/badge/MediaPipe-Hand%20Tracking-orange)
+![build](https://img.shields.io/badge/Build-Zero%20Dependencies-purple)
 
-An interactive, gesture-reactive 3D particle simulation built as part of an Antigravity AI exploration session.
-This project turns human hand motion into a living, breathing particle field — blending creative coding, WebGL, and AI-based interaction.
+---
 
-✨ What this is
+## ✨ Overview  
 
-A fully self-contained single-file WebGL experience where ~8,000 GPU particles morph, flow, and react in real time to your hand gestures.
+This project is a **motion-interactive 3D particle system** that responds to real-time hand gestures using your webcam.  
+Open your palm → particles expand into a glowing nebula.  
+Close your fist → particles implode into a tight energetic core.  
 
-No frameworks.
-No build tools.
-Just pure browser + shaders + curiosity.
+All rendered with custom shaders and fully contained in a single HTML file.
 
-🧠 Core Features
+Built after attending a hands-on session by GDG × ACM.
 
-🔹 ~8,000 shader-driven particles (GPU accelerated)
+---
 
-🔹 Morphing formations → Sphere · Cube · Torus · DNA Spiral
+## 🚀 Live Demo  
+👉 https://abilalgorithms.github.io/abil-gesture-calc/
 
-🔹 Real-time hand tracking (MediaPipe Hands)
+*(Allow camera access when prompted)*
 
-🔹 Gesture physics:
+---
 
-✋ Open hand → expansion / cool cyan energy
+## 🎮 Interaction  
 
-✊ Closed fist → contraction / magenta tension
+| Gesture | Effect |
+|--------|-------|
+Open hand | Particle expansion + cool cyan shift |
+Closed fist | Implosion + hot magenta energy |
+Move hand | Drag particle cloud in 3D space |
 
-🔹 Smooth spatial mapping from camera → 3D world
+---
 
-🔹 Organic motion via sine / noise displacement
+## 🧠 Tech Stack  
 
-🔹 Glassmorphism control panel UI
+- **Three.js** — custom shader particle engine  
+- **MediaPipe Hands** — real-time gesture tracking  
+- **WebGL** — GPU rendering  
+- **Pure HTML/CSS/JS** — zero build tools  
 
-🔹 Adjustable density (4k · 8k · 15k)
+---
 
-🔹 Toggle: auto-rotation & hand-follow
+## 🌠 Features  
 
-🎨 Visual Style
+- ~8k GPU particles with additive blending  
+- Breathing + sine displacement motion  
+- Morph shapes → Sphere / Cube / Torus / Spiral  
+- Smooth lerp transitions everywhere  
+- Glassmorphism control panel  
+- Density & formation controls  
+- Auto-rotation toggle  
+- Hand-follow toggle  
+- Camera fallback states  
 
-Deep cosmic background #020205
+---
 
-Neural / energy aesthetic
+## 📂 Architecture  
 
-Additive blending glow
-
-Soft glass UI with backdrop-filter
-
-Fluid interpolation everywhere (THREE.MathUtils.lerp)
-
-Goal: make particles feel alive, not rendered.
-
-🕹️ Interaction
-
-Your hand becomes the force field.
-
-Move hand → drag particle cloud
-
-Open palm → expansion
-
-Closed fist → implosion
-
-Hold pose → sustained state
-
-It feels less like controlling UI and more like shaping matter.
-
-🧪 Tech Stack
-
-Three.js (WebGL)
-
-Custom GLSL shaders
-
-MediaPipe Hands
-
-Vanilla HTML/CSS/JS
-
-CDN-loaded dependencies
-
-Single-file architecture
-
-📦 Architecture
-
-Everything lives inside:
-
+Single-file architecture:
 index.html
+├─ shaders
+├─ particle engine
+├─ gesture mapping
+├─ UI controls
+└─ scene orchestration
 
-Includes:
 
-HTML structure
+No bundlers. No installs. No frameworks.
 
-CSS styling
+---
 
-shaders
+## 🎯 Why This Exists  
 
-particle engine
+I wanted to explore how **human motion can directly sculpt digital matter** —  
+turning gestures into physics-like particle behavior in real time.
 
-hand tracking
+This is a step toward:
 
-UI controls
+- gesture-native interfaces  
+- immersive portfolios  
+- touchless interaction systems  
+- spatial web experiences  
 
-Zero build pipeline required.
+---
 
-🚀 Run Locally
+## 🧪 Future Ideas  
 
-Just open:
+- Spatial audio reacting to particle energy  
+- Multi-hand interaction  
+- Gesture-driven UI navigation  
+- Portfolio controlled by expressions  
+- WebXR / AR mode  
 
-index.html
+**PS:** Might add music & sound + open to ideas that enhance immersion ✨  
 
-Allow camera access when prompted.
-Move your hand in view.
+---
 
-That’s it.
+## 👨‍💻 Author  
 
-🌍 Why I built this
+**Abilfazal Tankiwala**  
+BTech CSE • Creative Technologist and AI Enthusiast 
 
-This experiment explores:
+GitHub → https://github.com/AbilAlgorithms  
+LinkedIn → https://www.linkedin.com/in/abilfazaltankiwala/
 
-gesture-driven interfaces
+---
 
-emotion-aware UI
+## ⭐ If you like this  
 
-human-computer interaction
-
-creative AI experiences🌌
-
-I’m especially interested in how future interfaces might respond to human state instead of clicks.
-
-🔮 Possible Evolutions
-
-emotion detection (smile / focus)
-
-audio-reactive particles
-
-interactive portfolio landing
-
-XR / spatial UI
-
-multi-hand physics
-
-particle-based storytelling
-
-🙏 Acknowledgment
-
-Built during an Antigravity AI session led by Abhishek Raj Permani, whose exploration-first approach made creative AI feel accessible and exciting.
-
-💡 PS
-
-Might add music + spatial sound soon 🎧
-
-👨‍💻 Author
-
-Abil (AbilAlgorithms)
-Creative coding · AI interaction · curious builder
+Star the repo — it helps visibility and motivates future experiments.
